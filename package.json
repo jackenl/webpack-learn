@@ -9,18 +9,30 @@
     "split:dynamicImport": "webpack --config ./split/dynamicImport/webpack.config.js",
     "tree-shaking": "webpack --config ./tree-shaking/default/webpack.config.js",
     "tree-shaking:usedExports": "webpack --config ./tree-shaking/usedExports/webpack.config.js",
-    "tree-shaking:sideEffects": "webpack --config ./tree-shaking/sideEffects/webpack.config.js"
+    "tree-shaking:sideEffects": "webpack --config ./tree-shaking/sideEffects/webpack.config.js",
+    "test:plugin": "webpack --config ./plugin/webpack.config.js",
+    "test:loader": "jest loader"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.14.3",
+    "@babel/preset-env": "^7.14.4",
+    "babel-jest": "^27.0.2",
     "babel-loader": "^8.2.2",
+    "jest": "^27.0.4",
+    "loader-utils": "^2.0.0",
+    "memfs": "^3.2.2",
+    "schema-utils": "^3.0.0",
     "webpack": "^5.38.1",
-    "webpack-cli": "^4.7.0"
+    "webpack-cli": "^4.7.0",
+    "webpack-sources": "^2.3.0"
   },
   "dependencies": {
     "lodash": "^4.17.21"
+  },
+  "jest": {
+    "testEnvironment": "node"
   }
 }
