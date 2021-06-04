@@ -12,6 +12,9 @@
     "tree-shaking": "webpack --config ./tree-shaking/default/webpack.config.js",
     "tree-shaking:usedExports": "webpack --config ./tree-shaking/usedExports/webpack.config.js",
     "tree-shaking:sideEffects": "webpack --config ./tree-shaking/sideEffects/webpack.config.js",
+    "runtime:require": "webpack --config ./runtime/require/webpack.config.js",
+    "runtime:import": "webpack --config ./runtime/import/webpack.config.js",
+    "runtime:async": "webpack --config ./runtime/async/webpack.config.js",
     "test:plugin": "webpack --config ./plugin/webpack.config.js",
     "test:loader": "jest loader"
   },
