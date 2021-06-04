@@ -7,6 +7,8 @@
     "split:entry": "webpack --config ./split/entry/webpack.config.js",
     "split:splitChunks": "webpack --config ./split/splitChunks/webpack.config.js",
     "split:dynamicImport": "webpack --config ./split/dynamicImport/webpack.config.js",
+    "cache:cacheGroups": "webpack --config ./cache/cacheGroups/webpack.config.js",
+    "cache:moduleIds": "webpack --config ./cache/moduleIds/webpack.config.js",
     "tree-shaking": "webpack --config ./tree-shaking/default/webpack.config.js",
     "tree-shaking:usedExports": "webpack --config ./tree-shaking/usedExports/webpack.config.js",
     "tree-shaking:sideEffects": "webpack --config ./tree-shaking/sideEffects/webpack.config.js",
