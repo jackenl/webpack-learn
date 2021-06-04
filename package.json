@@ -1,0 +1,20 @@
+{
+  "name": "webpack-learn",
+  "version": "1.0.0",
+  "description": "webpack 学习笔记",
+  "main": "index.js",
+  "scripts": {
+    "tree-shaking": "webpack --config ./tree-shaking/default/webpack.config.js",
+    "tree-shaking:usedExports": "webpack --config ./tree-shaking/usedExports/webpack.config.js",
+    "tree-shaking:sideEffects": "webpack --config ./tree-shaking/sideEffects/webpack.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "babel-loader": "^8.2.2",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.0"
+  }
+}
